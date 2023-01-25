@@ -21,7 +21,7 @@ const CurrentTrack = ({curr}) => {
             const currentlyPlaying = {
                 id: item.id,
                 name: item.name,
-                artists: item.artists.map((artists) => artists.name),
+                artists: item.artist,
                 image: item.album.images[2].url,
             };
             dispatch({type:reducerCases.SET_PLAYING, currentlyPlaying});
@@ -47,7 +47,7 @@ const CurrentTrack = ({curr}) => {
                 </div>
                 <div className={styles.trackInfo}>
                     <h4 className={styles.h4}>{currentlyPlaying.name}</h4>
-                    <h6 className={styles.h6}>{currentlyPlaying.artists.join(", ")}</h6>
+                    <h6 className={styles.h6}>{currentlyPlaying.artists}</h6>
                 </div>
             </div>
         )}

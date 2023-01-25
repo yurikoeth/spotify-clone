@@ -35,7 +35,7 @@ const Login = () => {
             className={style.logo}>
         </img>
         {/*login button*/}
-        <a className={style.loginButton} onClick={handleClick}>CONNECT SPOTIFY</a>
+        <button className={style.loginButton} onClick={handleClick}>CONNECT SPOTIFY</button>
     </div>
   )
 }

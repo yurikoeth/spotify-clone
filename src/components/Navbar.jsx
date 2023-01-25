@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { FaSearch } from 'react-icons/fa'
 import { CgProfile } from 'react-icons/cg'
 import { useStateProvider } from "../utilities/StateProvider"
@@ -22,12 +22,12 @@ function Navbar() {
         <input className={styles.searchInput} type="text" placeholder="Artists, songs, or podcasts"/>
       </div>
       <div className={styles.avatarContainer}>
-        <a className={styles.anchor} href="#">
+        <button className={styles.anchor} href="#">
           <CgProfile className={styles.avatar}/>
           <span>
             {userInfo?.userName}
           </span>
-        </a>
+        </button>
       </div>
     </div>
   )
